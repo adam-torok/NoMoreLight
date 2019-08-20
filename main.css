@@ -278,6 +278,7 @@ section.inner {
 	"card1 card1"
     "footer footer" ;
   }
+  
 	.landing {
 		height: 90vh;
 		display: flex;
@@ -514,7 +515,10 @@ section.inner {
 		margin: 0rem;
 		grid-gap: 5px;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "armory armory armory" "card2 card3 card4" "card2 card1 card1" "footer footer footer";
+		grid-template-areas: "armory armory armory" "card2 card3 card4"
+		 "card2 card1 card1"
+		  "footer footer footer"
+		  "form form form";
 	}
 	section.armory {
 		grid-area: armory;
@@ -527,6 +531,42 @@ section.inner {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+	}
+	section.form{
+		color:white;
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		font-family: 'Special Elite', cursive !important;
+		display: grid;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		grid-area: form;
+	}
+	#logo-form{
+		height: 50vh;
+		justify-self: center;
+		width: auto;
+	}
+	section.form input{
+		width: 100%;
+		padding-top:1rem;
+		margin-top: 0.5rem;
+		padding-bottom:1rem;
+		font-family: 'Special Elite', cursive;
+		margin-bottom: 0.5rem;
+	}
+	.button{
+		background-color: #FF9210; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	#comment-input{
+		height: 20vh;
 	}
 	section.footer {
 		grid-area: footer;
