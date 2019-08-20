@@ -131,7 +131,7 @@ header {
 	display: flex;
 	font-family: 'Special Elite', cursive;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	transition: top 0.5s ease-in-out;
 	width: 100%;
 }
@@ -152,6 +152,7 @@ header {
 header a {
 	text-decoration: none;
 	color: #FF9210;
+	font-size: 1.5rem;
 }
 
 a:hover {
@@ -348,7 +349,7 @@ section.inner {
 		height:10vh;
 	}
 	li a {
-		font-size: 10px;
+		font-size: 1rem;
 		text-transform: uppercase;
 		text-align: center;
 		padding-right: 1rem;
@@ -359,14 +360,11 @@ section.inner {
 	hr{
 		border-color: #FF9210;
 	}
-	header a {
-		font-size: 0.8rem;
-	}
-	header {
+		header {
 		position: relative;
 		display: flex;
 		width: auto;
-		justify-content: space-between;
+		justify-content: center;
 		padding-top: auto;
 	}
 	h3{
@@ -457,7 +455,7 @@ section.inner {
 	}
 	section.card2 {
 		color: white;
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 	}
 	section.footer {
