@@ -897,7 +897,7 @@ position: fixed;
 right: -13px;
 text-size-adjust: 100%;
 transform: matrix(1, 0, -0.700208, 1, 0, 0);
-width: 240px;
+width: 330px;
 z-index: 20;
 
 }
@@ -936,6 +936,10 @@ z-index: 20;
 	color:orange;
 }
 .fab{
+	color:white;
+	transform: skewX(35deg);
+}
+.far{
 	color:white;
 	transform: skewX(35deg);
 }
