@@ -2,7 +2,7 @@ body,
 html {
 	margin: 0;
 	scroll-behavior: smooth;
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-4.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg-image-4.jpg);
 }
 
 ::selection {
@@ -215,20 +215,6 @@ h1 {
 	font-family: 'Special Elite', cursive !important;
 }
 
-section.hero {
-	background-image: url(bg-image.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-section.hero p {
-	max-width: 70%;
-	font-size: 1.2rem;
-	margin-bottom: 0;
-}
-
 section.footer {
 	color: black;
 }
@@ -247,18 +233,13 @@ section.inner {
 	}
 	.landing {
 		display: block;
-		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg-image.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg-image.jpg);
 	}
 	header {
 		color: white;
 	}
 	header {
 		background-color: #292928;
-	}
-	section.hero {
-		padding: 2em;
-		padding-left: 3em;
-		height: 80vh;
 	}
 }
 
@@ -275,16 +256,41 @@ section.inner {
 	.logo {
 		height: 10vh;
 	}
+	p {
+		color: white;
+	}
 	.wrapper {
 		display: grid;
 		grid-template-columns: auto 1fr;
-		grid-template-areas: "armory armory" "card2 card2" "card4 card3" "card1 card1" "gallery-holder gallery-holder" "form form" "footer footer";
+		grid-template-areas: "armory armory" "card2 card2" "card4 card3" "card1 card1" "news news " "gallery-holder gallery-holder" "form form" "footer footer";
 	}
-	
+	section.news {
+		grid-area: news;
+		display: grid;
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.container-news {
+		padding: 1rem;
+	}
+	.news-card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		margin: 1rem;
+	}
+	.news-card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		filter: grayscale(1);
+	}
+	.news-img {
+		object-fit: cover;
+	}
 	div.gallery-holder {
 		grid-area: gallery-holder;
 		padding: 3rem;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 	section.gallery {
@@ -318,32 +324,33 @@ section.inner {
 		grid-area: card1;
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 		margin: 1rem;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+		;
 	}
 	section.card2 {
 		color: #FF9210;
 		grid-area: card2;
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 		margin: 1rem;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	}
 	section.card3 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 		grid-area: card3;
 		color: #FF9210;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 		margin: 1rem;
 	}
 	section.card4 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 		color: #FF9210;
 		grid-area: card4;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 		margin: 1rem;
 	}
 	section.armory {
 		grid-area: armory;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	}
 	header a {
 		color: white;
@@ -357,7 +364,7 @@ section.inner {
 	}
 	section.form {
 		color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		font-family: 'Special Elite', cursive !important;
 		display: grid;
 		text-align: center;
@@ -448,26 +455,24 @@ section.inner {
 	section.armory {
 		margin: 0;
 		color: orange;
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
-		border-top: 1px solid;
 		border-bottom: 1px solid;
 		padding: 3rem;
 	}
 	section.card1 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	}
 	section.card2 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	}
 	section.card3 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	}
 	section.card4 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
-		background: linear-gradient( rgba(134, 94, 7, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		color: #FF9210;
 	}
 	header nav ul {
@@ -480,8 +485,7 @@ section.inner {
 		padding: 0;
 	}
 	section {
-		margin: 1rem;
-		padding: 1rem 2rem 1rem 2rem;
+		padding: 0.8rem;
 	}
 	.landing {
 		height: 90vh;
@@ -508,14 +512,9 @@ section.inner {
 	#header.active {
 		box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 	}
-	section.hero {
-		padding-top: 2rem;
-		background-position: left;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
-	}
 	section.card2 {
 		color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 	}
 	section.footer {
@@ -530,7 +529,7 @@ section.inner {
 	}
 	section.form {
 		color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		font-family: 'Special Elite', cursive !important;
 		display: grid;
 		text-align: center;
@@ -563,13 +562,29 @@ section.inner {
 		display: inline-block;
 		font-size: 16px;
 	}
+	.news-card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	}
+	.news-card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		filter: grayscale(1);
+		transform: scale(1.05);
+	}
+	.news-img {
+		object-fit: cover;
+	}
+	.container-news {
+		padding: 1rem;
+	}
 	#comment-input {
 		height: 10vh;
 	}
 	div.gallery-holder {
 		padding: 1rem;
 		grid-area: gallery-holder;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 	section.gallery {
@@ -603,7 +618,7 @@ section.inner {
 		color: white;
 	}
 	.landing {
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg-image.jpg);
 		background-repeat: no-repeat;
 		position: relative;
 		display: flex;
@@ -641,54 +656,51 @@ section.inner {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: "armory armory armory" "card2 card3 card4" "card2 card1 card1" "news news news" "gallery-holder gallery-holder gallery-holder" "footer footer footer" "form form form";
 	}
-	section.news{
-		grid-area:news;
+	section.news {
+		grid-area: news;
 		display: grid;
-		padding:1rem;
+		padding: 1rem;
 		box-sizing: border-box;
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1200px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2,1 );
+		grid-template-rows: repeat(2, 1);
 	}
-
-		.container-news{
-			padding: 1rem; 
-		}
-	
+	.container-news {
+		padding: 1rem;
+	}
 	.news-card {
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		transition: 0.3s;
-		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg-image-1.jpg);
-		margin:1rem;
-	  }
-	  
-	  .news-card:hover {
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-		filter:grayscale(1);
-		transform: scale(1.05);  }
-	  
-	  .news-img{
-		  object-fit: cover;
-	  }
-	  .first-card{
-		grid-column-start: 1; 
-		grid-column-end: 3; 
-		grid-row-start: 1; 
-		grid-row-end: 3; 
-	  }
-	  .second-card{
-		grid-column-start: 1; 
-		grid-row-start: 3; 
-		grid-row-end: 5; 
-	  }
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		margin: 1rem;
+	}
+	.news-card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		filter: grayscale(1);
+		transform: scale(1.05);
+	}
+	.news-img {
+		object-fit: cover;
+	}
+	.first-card {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	.second-card {
+		grid-column-start: 1;
+		grid-row-start: 3;
+		grid-row-end: 5;
+	}
 	div.gallery-holder {
 		grid-area: gallery-holder;
 		padding: 5rem;
-		margin:1rem;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		margin: 1rem;
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 	section.gallery {
@@ -710,14 +722,14 @@ section.inner {
 		padding: 3rem;
 		margin: 1rem;
 		color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 	section.form {
 		color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-image-1.jpg');
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		font-family: 'Special Elite', cursive !important;
 		display: grid;
 		text-align: center;
@@ -787,7 +799,7 @@ section.inner {
 		margin: 1rem;
 		text-align: start;
 		background-color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 		background-position: left;
 	}
 	section.card1 img {
@@ -825,20 +837,10 @@ section.inner {
 		display: grid;
 		margin: 1rem;
 		background-color: white;
-		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg-image-1.jpg);
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 		background-size: cover;
 		background-position: top;
 	}
-}
-
-section.hero {
-	grid-area: hero;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg-image.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	grid-template-rows: auto;
 }
 
 @media only screen and(min-width:1800px) {
@@ -859,10 +861,10 @@ p {
 	color: white;
 }
 
-.corner-time{
-	padding:1rem;
-	float:right;
-	margin:1rem;
+.corner-time {
+	padding: 1rem;
+	float: right;
+	margin: 1rem;
 	color: orange !important;
 	text-align: right;
 }
