@@ -102,7 +102,7 @@ body {
 .container {
 	display: flex;
 	justify-content: space-around;
-	text-align: center;
+	text-align: left;
 	align-items: center;
 	padding: 1rem;
 	color: white;
@@ -450,6 +450,10 @@ section.inner {
 	h3 {
 		color: white;
 	}
+	h4{
+		
+		color: #FF9210;
+	}
 	.wrapper {
 		display: block;
 	}
@@ -466,7 +470,10 @@ section.inner {
 		margin: 0;
 		color: orange;
 		border-bottom: 1px solid;
-		padding: 3rem;
+		padding: 0.5rem;
+	}
+	.armory h4{
+		color:white!important;
 	}
 	section.card1 {
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
@@ -481,6 +488,16 @@ section.inner {
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	}
 	section.card4 {
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+		color: #FF9210;
+	}
+	section.card5{
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+		color: #FF9210;
+	}
+	section.card6{
 		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		color: #FF9210;
@@ -627,6 +644,11 @@ section.inner {
 	header a {
 		color: white;
 	}
+	p{
+		font-size: 1.1rem;
+	}
+	h4{
+	}
 	.landing {
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg-image.jpg);
 		background-repeat: no-repeat;
@@ -650,7 +672,7 @@ section.inner {
 	.landing p {
 		color: white;
 		font-weight: 300;
-		font-size: 22px;
+		font-size: 26px;
 		padding: 1rem
 	}
 	.wrapper {
@@ -664,7 +686,13 @@ section.inner {
 		margin-right: auto;
 		max-width: 1200px;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "armory armory armory" "card2 card3 card4" "card2 card1 card1" "news-holder news-holder news-holder" "gallery-holder gallery-holder gallery-holder" "footer footer footer" "form form form";
+		grid-template-areas: "armory armory armory"
+		 "card2 card3 card4" 
+		 "card5 card5 card6"
+		 "card1 card1 card1" 
+		 "news-holder news-holder news-holder"
+		  "gallery-holder gallery-holder gallery-holder" 
+		  "footer footer footer" "form form form";
 	}
 	section.news-holder {
 		grid-area: news-holder;
@@ -713,7 +741,6 @@ section.inner {
 	}
 	div.gallery-holder {
 		grid-area: gallery-holder;
-		padding: 5rem;
 		margin: 1rem;
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -812,6 +839,7 @@ section.inner {
 		color: white;
 		display: grid;
 		margin: 1rem;
+		padding: 1.5rem;
 		text-align: start;
 		background-color: white;
 		background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -821,12 +849,12 @@ section.inner {
 		height: auto;
 	}
 	section.card1 h3 {
-		color: #FF9210;
 		text-align: start;
+		color:orange;
 	}
 	section.card2 {
 		grid-area: card2;
-		padding: 3rem;
+		padding: 1.5rem;
 		font-weight: lighter;
 		color: orange;
 		margin: 1rem;
@@ -840,7 +868,7 @@ section.inner {
 		grid-area: card3;
 		color: orange;
 		margin: 1rem;
-		padding: 3rem;
+		padding: 1.5rem;
 		display: grid;
 		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg-image-1.jpg);
 		background-size: cover;
@@ -851,11 +879,36 @@ section.inner {
 		grid-area: card4;
 		display: grid;
 		margin: 1rem;
+		color: orange;
+		padding:1.5rem;
 		background-color: white;
 		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 		background-size: cover;
 		background-position: top;
 	}
+	section.card5{
+		grid-area: card5;
+		display: grid;
+		margin: 1rem;
+		color: orange;
+		padding:1.5rem;
+		background-color: white;
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		background-size: cover;
+		background-position: top;
+	}
+	section.card6{
+		grid-area: card6;
+		display: grid;
+		margin: 1rem;
+		color: orange;
+		padding:1.5rem;
+		background-color: white;
+		background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		background-size: cover;
+		background-position: top;
+	}
+
 }
 
 @media only screen and(min-width:1800px) {
@@ -895,7 +948,7 @@ p {
 	height: 36px;
 	line-height: 20px;
 	position: fixed;
-	right: -13px;
+	right: -1px;
 	text-size-adjust: 100%;
 	transform: matrix(1, 0, -0.700208, 1, 0, 0);
 	width: 220px;
