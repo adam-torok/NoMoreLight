@@ -1,380 +1,385 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Made by Török Ádám 2019.08.21-->
+<html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css"
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/75ad4010ea.js"></script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NO-MORE-LIGHT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="icon" href=icon.ico>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>No More Light</title>
 </head>
 
 <body>
+  <!--LOADER-->
+  <!-- <div class="se-pre-con"></div> -->
   <header class="nav-down" id="header">
-    <img style="text-align: left" class="logo-header" src="img/logo_skull_white.png" alt="">
-    <nav>
+    <nav class="fill">
       <ul>
-        <li><a href="#landing">HOME</a></li>
+        <img class="logo" src="img/logo_skull_white.png" alt="">
+        <li><a href="#">HOME</a></li>
         <li><a href="#news">NEWS</a></li>
-        <li><a href="#media">MEDIA</a></li>
-        <li><a href="#form">CONTACT</a></li>
-
+        <li><a href="#gallery">MEDIA</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-
-  <a href="#" id="scroll" style="display: none;"><span></span></a>
-
-  <div id="landing" class="landing">
+  <div id='hero'>
+    <div class='layer-bg layer' data-depth='0.10' data-type='parallax'>
+      <div class="landing-content">
+        <img class="logo-header" src="img/logo_white.png" alt="">
+        <h2> <i style="padding:0;">„…there's only a few survivors and we are one of them”
+          </i> </h2>
+      </div>
+    </div>
+    <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+    <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+    <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
+    <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+    <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+  </div>
+  <div id='hero-mobile'>
     <div class="landing-content">
-      <p>post apocalyptic<mark> hardcore</mark> survival horror game </p>
-      <img class="logo" src="img/logo_white.png" alt="">
-      <p><i data-aos="zoom-in" data-aos-duration="2500">„…there's only a few survivors and <mark>we</mark> are one of
-          them”</i></p>
-
-
-      </p>
+        <img class="logo-header" src="img/logo_white.png" alt="">
+      <h2> <i style="padding:0;">""</i>„…there's only a few survivors and we are one of them” </h2>
+      <i class="fab fa-steam  fa-3x"></i>
     </div>
   </div>
-  <div class="wrapper">
-    <section class="armory">
-        <h1 style="text-align:center">Overview</h1>
-              <hr>
-      <div class="container">
-        
-          <div data-aos="zoom-in" data-aos-duration="2500" class="firstAw">
-            
-            <p>The No More Light is a hardcore survivor horror game whereas a gamer you will gonna find yourself in a huge destroyed world that is
-                under-occupied by aliens. Your main goal is to save humanity from the total extinction, but first <mark>YOU </mark> must be reached the next day...
-                It s also a serious challenge. Fast-changing weather, alien bacteria, low ammo, food, and medkit, as well as stony enemies, will cause you a lot of trouble
-                at the gameplay. It is up to you what strategy you follow, but be careful to make the right choice, because in this world there is no second chance...
-            </p>
-          </div>
-          <div  style="align-self: center" class="panel-image">
-              <img src="img/bg-image.jpg" alt="">
-            </div>
-      </div>
-       
+  <div class="wrapper-all">
+    <section class='slogan'>
+      <h1 class="animated fadeUp" data-aos-delay="10" data-aos="fade-up" data-aos-offset="100"
+        data-aos-easing="ease-in-sine">"AS VISUALLY
+        <mark> STRIKING</mark> <br>
+        AS ITS <mark>UNIQUE</mark> PREMISE."</h1>
+      <div class="slogan-text">
     </section>
-    <section class="card1">
-      <div class="inner">
-        <div class="anim-panel">
-          <h3>ATMOSPHERE</h3>
-          <div class="panel-image">
-              <img src="img/bg-image.jpg" alt="">
-            </div>
-            <h4>We are in the countryside of Colorado State in the United States.</h4>
-            <hr>
-          <p data-aos="fade-right"> There are many dangers involved in this enormous open world. Because of the alien bacteria, that are deadly to all living things on earth recommended to
-              wear protective equipment. If you choose to avoid them you still need to be careful! In the destroyed towns and woods plenty of aliens are waiting to catch you...
-              Because of these, and many other things the No More Light has got a very depressing, post-apocalyptic atmosphere, which will captivate you in the first moment.</p>
+    <section class="about-us">
+      <div class="about-us-left">
+          <iframe width="70%" height="70%" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="about-us-right">
+        <h1 style="color:orange">OVERVIEW</h1>
+        <hr>
+        <p data-aos="fade-right" class="aos-init aos-animate"> The No More Light is a hardcore survivor horror game
+          whereas a gamer you will gonna find yourself in a huge destroyed world that is under-occupied by aliens. Your
+          main goal is to save humanity from the total extinction, but first YOU must be reached the next day... It s
+          also a serious challenge. Fast-changing weather, alien bacteria, low ammo, food, and medkit, as well as stony
+          enemies, will cause you a lot of trouble at the gameplay. It is up to you what strategy you follow, but be
+          careful to make the right choice, because in this world there is no second chance...</p>
+        <a href="#gallery" class="button">MORE</a>
+      </div>
+    </section>
+    <section class='awards'>
+      <div id="big-card" data-aos="fade-in" class="aw-cards">
+        <div class="big-card-content">
+            <img class="aw-image" src="img/fall2.png" alt="">
+        </div>
+        <div>
+            <h1>GREYS</h1>
+            <h2>The situation is very <mark>hopeless</mark> and futureless...</h2>
+            <p>But - you don't need to fight alone against the Invaders!
+              <br>  
+              The Greys
+              will help you with this. They have been protecting humanity invisibly for thousands of years, and now they are
+              entering the scene because with the occupation of our planet, theirs began to be in danger as well. They will
+              help you, and if they need they will fight with you, but not instead of you!</p>
         </div>
        
       </div>
-    </section>
-    <section class="card2">
-      <div class="inner">
-        <div data-aos="" class="panel">
-          <h3>ENVIRONMENT</h3>
-          <div class="panel-image">
-            <img src="img/bg-image.jpg" alt="">
-          </div>
-          <h4>We are in the countryside of Colorado State in the United States.</h4>
-          <hr>
-          <p data-aos="fade-right">There are over 100 exclusive detailed places like military bases, bunkers, caves, cities, farms, marshes, factories, wreck sites waiting for you to explore them.
+      <div id="big-card" data-aos="fade-in" class="aw-cards">
+      
+<div>
+    <h1>THE INVADERS</h1>
+    <h2>They are travel in the galaxy thousands of years, and <mark>invade</mark> every planet and use them for themselves, after
+        that they move on.</h2>
+    <p> This time the <mark>Earth</mark>  and humanity is the next. Their technology is more advanced than the
+      humans, their power is a multiple of the human, and they have thousands of years of experience in the galactic
+      warfare. Because they live FOR war because they live FROM war.</p>
+      
+</div>
+<div>
+    <img class="aw-image" src="img/invader.png" alt="">
+</div>
+      </div>
+      <div data-aos="fade-in" class="aw-cards">
+          <img class="aw-image" src="img/bg-image-4.jpg" alt="">
+
+        <h1>ATMOSPHERE</h1>
+        <hr>
+
+        <p>There are many dangers involved in this enormous open world. Because of the alien bacteria, that are deadly
+          to all living things on earth recommended to wear protective equipment. If you choose to avoid them you still
+          need to be careful! In the destroyed towns and woods plenty of aliens are waiting to catch you... Because of
+          these, and many other things the No More Light has got a very depressing, post-apocalyptic atmosphere, which
+          will captivate you in the first moment..</p>
+
+      </div>
+      <div  data-aos="fade-in" class="aw-cards">
+            <img class="aw-image" src="img/bg-image-4.jpg" alt="">
+     
+          
+        <h1>ENVIRONMENT</h1>
+        <hr>
+        <p>We are in the countryside of Colorado State in the United States.
+
+            There are over 100 exclusive detailed places like military bases, bunkers, caves, cities, farms, marshes, factories, wreck sites waiting for you to explore them.
             But be careful! 
             In this fast-changing darkness world only one thing sure: you are in danger! 
-            The only question is: Are you ready to fight and survive? </p>    
-            
-        </div>
+            The only question is: Are you ready for the battle and the survival? 
+            </p>
+      </div>
+      <div data-aos="fade-in" class="aw-cards" >
+          <img class="aw-image" src="img/bg-image-4.jpg" alt="">
+
+        <h1>ACTION</h1>
+        <hr>
+
+        <p>Only thing matters The Fight!
+            You must be fight against the brutal aliens who are constantly chasing you
+            You must be fight against the weather what changes in a seconds
+            You must be fight for the food. There are only a few and others want it as well.
+            You must be fight against the low ammo. There is a little of it and run out quickly in a battle.
+            You must be fight against your condition. There s not enough medicine so better if you don t hurt yourself. But you will...
+            And finally, you must be fight against you to don t give up...</p>
 
       </div>
     </section>
-    
-    <section class="card4">
-      <div class="inner">
-        <div class="panel">
-          <h3>ACTION</h3>
-          <div class="panel-image">
-            <img src="img/bg-image.jpg" alt="">
-          </div>
-          <h4 >Only thing matters The <mark>Fight!</mark></h4>
-            <hr>
-            <ul class="action-ul">
-              <li>You must be fight against the brutal aliens who are constantly chasing you</li>
-              <li>You must be fight against the weather what changes in a seconds</li>
-              <li>You must be fight for the food. There are only a few and others want it as well.</li>
-              <li>You must be fight against the low ammo. There is a little of it and run out quickly in a battle.</li>
-              <li>You must be fight against the low ammo. There is a little of it and run out quickly in a battle.</li>
-              <li> You must be fight against your condition. There s not enough medicine so better if you don't hurt yourself. But you will...</li>
-              <li>                And <i>finally</i> you must be fight against you to don t give up...</p>
-              </li>
-        </div>
-      </div>
-    </section>
-    <section class="card5">
-        <div class="inner">
-            <div class="container">
-                <div data-aos="zoom-in" data-aos-duration="2500" class="firstAw">
-                    <h1 >Greys</h1>
-                    <h2>Allies</h2>
-                    <hr>
-                    
-                  <p>The situation is very hopeless and futureless, you don't need to fight alone against the Invaders! 
-                      The Greys will help you with this. They have been protecting humanity invisibly for thousands of years, and now they are entering the scene
-                      because with the occupation of our planet, theirs began to be in danger as well.
-                      They will help you, and if they need they will fight with you, but not instead of you!
-                  </p>
-                </div>
-                <div class="panel-image">
-                    <img data-aos="fade-right" data-aos-duration="2500" style="border: none" src="img/soldier3.png" alt="">
-                  </div>
-              </div>
-        </div>
-      </section>
-      <section class="card6">
-          <div class="container">
-              <div class="panel-image">
-                  <img data-aos="fade-right" data-aos-duration="2500" style="border: none" src="img/pinky.png" alt="">
-                </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="firstAw">
-                  <h1 style="text-align: right">The Invaders</h1>
-                  <h2 style="text-align: right">The enemy</h2>
-                  <hr>
-                <p>They are travel in the galaxy thousands of years, and invade every planet and use them for themselves, after that they move on.
-                    This time the Earth and humanity is the next.
-                    
-                    Their technology is more advanced than the humans, their power is a multiple of the human, and they have thousands of years of experience in the galactic warfare.
-                    Because they live FOR war because they live FROM war.              
-                </p>
-              </div>
-                         </div>
 
-           
-          </div>
-        </section>
+
     <div id="news" class='news'>
-        <div class="news-content">
-            <section class="news-article">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                      
-                <span class="corner-time">02/02/18</span>
-      
-                <div class="news-article-content">
-                  <h1>INTRO</h1>
-      
-                  <p>One of the first footage's from the game. Actually its looks dope AF!  
-                    </p>
-                  <button class="button collapse">READ MORE</button>
-      
-                  <div class="article-dropdown-content">
-                    <p>Don't you think she looks tired? Black tie...Whenever I wear this, something bad always happens. Aw, I wanted to be ginger! I've never been ginger! And you, Rose Tyler! </p>
-                  </div>
-                </div>
-      
-      
-              </section>
-              <section class="news-article">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                      
-                  <span class="corner-time">02/02/18</span>
-        
-                  <div class="news-article-content">
-                    <h1>INTRO</h1>
-        
-                    <p>One of the first footage's from the game. Actually its looks dope AF!  
-                      </p>
-                    <button class="button collapse">READ MORE</button>
-        
-                    <div class="article-dropdown-content">
-                      <p>Don't you think she looks tired? Black tie...Whenever I wear this, something bad always happens. Aw, I wanted to be ginger! I've never been ginger! And you, Rose Tyler! </p>
-                    </div>
-                  </div>
-        
-        
-                </section>
+      <div class="news-content">
+        <section class="news-article">
 
-                <section class="news-article">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                   
-                    <span class="corner-time">02/02/18</span>
-          
-                    <div class="news-article-content">
-                      <h1>INTRO</h1>
-          
-                      <p>One of the first footage's from the game. Actually its looks dope AF!  
-                        </p>
-                      <button class="button collapse">READ MORE</button>
-          
-                      <div class="article-dropdown-content">
-                        <p>Don't you think she looks tired? Black tie...Whenever I wear this, something bad always happens. Aw, I wanted to be ginger! I've never been ginger! And you, Rose Tyler! </p>
-                      </div>
-                    </div>
-          
-          
-                  </section>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="corner-time">02/02/18</span>
+          <div class="news-article-content">
+            <h2>UNDERTAKER</h2>
 
-                  <section class="news-article">
-                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                      <span class="corner-time">02/02/18</span>
-            
-                      <div class="news-article-content">
-                        <h1>INTRO</h1>
-            
-                        <p>One of the first footage's from the game. Actually its looks dope AF!  
-                          </p>
-                        <button class="button collapse">READ MORE</button>
-            
-                        <div class="article-dropdown-content">
-                          <p>Don't you think she looks tired? Black tie...Whenever I wear this, something bad always happens. Aw, I wanted to be ginger! I've never been ginger! And you, Rose Tyler! </p>
-                        </div>
-                      </div>
-            
-            
-                    </section>
-        </div>
-  
+
+            <p>Mumblecore cliche beard wolf chartreuse gluten-free literally single-origin coffee.</p>
+            <button class="button collapse">READ MORE</button>
+            <div class="article-dropdown-content">
+              <p>Lo-fi vegan subway tile, pinterest direct trade single-origin coffee authentic portland sriracha
+                live-edge. Knausgaard art party lomo pabst pok pok. Dreamcatcher freegan ennui bushwick seitan. Pickled
+                normcore selfies .</p>
+            </div>
+          </div>
+
+
+        </section>
+        <section class="news-article news-third">
+          <iframe width="100%" height="529" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="corner-time">02/02/18</span>
+
+          <div class="news-article-content">
+            <h2>DevVlog: Vocal Recording</h2>
+
+            <p>Tattooed edison bulb brooklyn chicharrones vinyl man bun echo park. Venmo austin blue bottle, readymade
+              waistcoat +1 .</p>
+            <button class="button collapse">READ MORE</button>
+            <div class="article-dropdown-content">
+              <p>Craft beer offal biodiesel shoreditch try-hard cronut celiac roof party prism pork belly sartorial
+                artisan. Cred schlitz cornhole iPhone readymade blog fashion axe woke vegan adaptogen chicharrones
+                meggings celiac. Organic irony four loko cold-pressed plaid. Crucifix wolf gastropub knausgaard,
+                chambray intelligentsia biodiesel. Gentrify tofu vape vegan kitsch tousled mustache distillery
+                pour-over.</p>
+            </div>
+          </div>
+
+
+        </section>
+        <section class="news-article">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="corner-time">02/02/18</span>
+
+          <div class="news-article-content">
+            <h2>INTRO</h2>
+
+            <p>One of the first footage's from the game. Actually its looks dope AF!
+            </p>
+            <button class="button collapse">READ MORE</button>
+
+            <div class="article-dropdown-content">
+              <p>Don't you think she looks tired? Black tie...Whenever I wear this, something bad always happens. Aw, I
+                wanted to be ginger! I've never been ginger! And you, Rose Tyler! </p>
+            </div>
+          </div>
+
+
+        </section>
+        <section class="news-article">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="corner-time">02/02/18</span>
+
+          <div class="news-article-content">
+            <h2>UPDATE V0.02</h2>
+
+            <p>We've created natural disasters, which will generate randomly on the wastelands.</p>
+            <button class="button collapse">READ MORE</button>
+
+            <div class="article-dropdown-content">
+              <p>Smith. Doctor John Smith. Shut up! Just shut up, shut up, shut up, shuttity up up up! The trouble with
+                computers, of course, is that they're very sophisticated idiots. They do exactly what you tell them at
+                amazing speed. Even if you order them to kill you. So if you do happen to change your mind, it's very
+                difficult to stop them from obeying the original order. But not impossible. No…
+                No-no-no-no-wait-wait-wait-wait… I remember I'm-I-I… I'm with my father, we're lying back in the grass,
+                it's a warm Gallifreyan night—.</p>
+            </div>
+          </div>
+
+
+        </section>
+        <section class="news-article">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/6sehccUjqiQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="news-article-content">
+            <span class="corner-time">02/02/18</span>
+
+            <h2>ABSOLUTE UNIT</h2>
+
+            <p>Very dangerous boss what can turn you into fany marbles dangerous boss what can turn you into fany
+              marbles dangerous boss what can turn you into fany marbles.</p>
+            <button class="button collapse">READ MORE</button>
+
+            <div class="article-dropdown-content">
+              <p>Cloud bread selvage yuccie synth meditation direct trade actually chillwave semiotics hot chicken
+                locavore neutra dreamcatcher cred. Plaid ethical ugh brunch pork belly narwhal mustache .</p>
+            </div>
+          </div>
+
+
+        </section>
+
       </div>
 
-    <div class="gallery-holder">
-      <h1 style="text-align: center; font-size: 2rem">GALLERY</h1>
+    </div>
+
+    <div id="gallery" class="gallery-holder">
+      <h1 style="text-align: center;">GALLERY</h1>
       <section id="media" class="gallery">
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép1" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép2" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép3" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép4" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép5" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
-        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-caption="kép6" data-group="images">
+        <a href="img/bg-image-2.jpg" class="js-smartPhoto" data-group="images">
           <img src="img/bg-image-2.jpg" />
         </a>
+
 
       </section>
     </div>
 
-    <section id="form" class="form">
-      <img class="logo" id="logo-form" src="img/logo_skull_white.png" alt="">
-      <form method="post" enctype="text/plain">
-        <br>
-        <H1>send us an <mark>EMAIL</mark>!</H1>
-        Name:<br>
-        <input type="text" placeholder="Your Name" name="name"><br>
-        E-mail:<br>
-        <input type="text" placeholder="Your Email" name="mail"><br>
-        Comment:<br>
-        <input type="text" id="comment-input" placeholder="Your comment" name="comment" size="50"><br><br>
-        <input class="button" type="submit" value="Send">
-      </form>
+    <section id="contact" class="form">
+
+
+      <div class="form-container">
+        <form method="post" enctype="text/plain">
+          <br>
+          <h1 style="  text-align: left;">SEND AN <mark>EMAIL</mark>!</h1>
+          Name:<br>
+          <input type="text" placeholder="Your Name" name="name"><br>
+          E-mail:<br>
+          <input type="text" placeholder="Your Email" name="mail"><br>
+          Comment:<br>
+          <input type="text" id="comment-input" placeholder="Your comment" name="comment" size="50"><br><br>
+          <input style="width: 20%" class="button" type="submit" value="Send">
+
+        </form>
+      </div>
+
+      <div class="form-image">
+        <img class="form-logo" src="img/fall2.png" alt="">
+      </div>
+
     </section>
+   
+    <section class="footer">
+      <div s class="aligner">
+        <h1>"AS VISUALLY STRIKING AS <mark>GOOD </mark>"</h1>
+        <img class="logo" src="img/unreal-logo.svg" alt="">
+
+        <h2>FOLLOW US ON SOCIAL!</h2>
+        <div class="social-container">
+          <a href=""> <i style="color: white" class="fab fa-patreon  fa-3x"></i></a>
+          <a href=""><i style="color: white" class="fab fa-facebook  fa-3x"></i></a>
+          <a href=""> <i style="color: white" class="fab fa-twitter  fa-3x"></i></a>
+
+          <br>
+          <blockquote style="text-align: center">© 2019 Alife Studio/Games , No more light is a game developed by Alife
+            Studio/Games , published by Alife Studio/Games No More Light is a registered trademark of Alife Studio. All
+            rights reserved.
+          </blockquote>
+          <blockquote>Created By Adam Torok</blockquote>
+        </div>
+    </section>
+
+
+
+
   </div>
 
-  <div class="socials">
-    <ul class="x-center">
-      <li class="facebook">
-        <a href="https://www.facebook.com/NoMoreLightPC" target="_blank" title="social link for Facebook">
-          <i aria-hidden="false" class="fab fa-facebook-f fa-2x"></i></a>
-      </li>
-      <li class="youtube">
-        <a href="https://www.youtube.com/channel/UCyTpJvfap4_6z15I8kljsKg" target="_blank"
-          title="social link for Youtube">
-          <i aria-hidden="false" class="fab fa-youtube fa-2x"></i>
-        </a></li>
-      <li class="twitter">
-        <a href=" " target="_blank" title="social link for Twitter">
-          <i aria-hidden="false" class="fab fa-twitter fa-2x"></i></a>
-      </li>
-    </ul>
-  </div>
 
 
-  <section class="footer">
-    <div class="inner">
-      <h1 data-aos="zoom-in" data-aos-duration="2500">"AS VISUALLY STRIKING AS <mark>GOOD </mark>"</h1>
-      <p style="text-align: center;">Made with Unreal Engine</p>
-      <img class="logo-header" src="img/unreal-logo.svg" alt="">
-      <p style="text-align: center">© 2019 Alife Studio/Games , No more light is a game developed by Alife Studio/Games
-        , published by Alife Studio/Games No More Light is a registered trademark of  Alife Studio. All rights
-        reserved.
-      </p>
-    </div>
-  </section>
 
-  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script>
-    AOS.init();
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $('#scroll').fadeIn();
-        } else {
-          $('#scroll').fadeOut();
-        }
-      });
-      $('#scroll').click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-      });
+
+    /* if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      console.log("fireflies go sleep");
+      $.firefly({
+      color: '#fff',
+      minPixel: 0,
+      maxPixel: 0,
+      total : 0,
+      borderRadius: 0
+    });}
+    $.firefly({
+      color: '#fff',
+      minPixel: 1,
+      maxPixel: 3,
+      total : 65,
+      on: '#firefly',
+      borderRadius: 50
     });
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
+    */
 
-    $(window).scroll(function (event) {
-      didScroll = true;
+
+    AOS.init({
+      startEvent: 'load',
     });
 
-    setInterval(function () {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
-
-    function hasScrolled() {
-      var st = $(this).scrollTop();
-
-      // Make sure they scroll more than delta
-      if (Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-      } else {
-        // Scroll Up
-        if (st + $(window).height() < $(document).height()) {
-          $('header').removeClass('nav-up').addClass('nav-down');
-        }
-      }
-
-      lastScrollTop = st;
-    }
     window.addEventListener('DOMContentLoaded', function () {
       new SmartPhoto(".js-smartPhoto");
     });
-    
+
     var coll = document.getElementsByClassName("collapse");
     var i;
 
@@ -389,12 +394,7 @@
         }
       });
     }   
-    window.addEventListener('DOMContentLoaded', function () {
-      new SmartPhoto(".js-smartPhoto");
-    });
-    
   </script>
-
 </body>
 
 </html>
