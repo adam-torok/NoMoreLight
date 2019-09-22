@@ -89,23 +89,22 @@ p {
 
 
 .layer-1 {
-	background-image: url(img/explod.png);
-	background-position:right ;
+	background-image: url(img/mist.png);
+	background-position:left bottom ;
 	opacity: 1;
 	background-size: 40vw;
 }
 
 .layer-2 {
-	background-image: url(img/mist.png);	background-position: right bottom;
+	background-image: url(img/mist.png);
+		background-position: center;
 }
 
 .layer-3 {
-	background-image: url(img/fall2.png);
+	background-image: url(img/threeufos.png);
 	background-position: right bottom;
 	filter: saturate(60%);
-	background-size: 50vw;
-
-
+	background-size: 45vw;
 }
 
 .layer-4 {
@@ -688,7 +687,7 @@ hr.style13 {
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
 	.layer-3 {
-		background-image: url(img/fall2.png);
+		background-image: url(img/threeufos.png);
 		background-position: right bottom;
 	}
 	.news-content{
