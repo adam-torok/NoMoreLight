@@ -101,7 +101,7 @@ p {
 }
 
 .layer-3 {
-	background-image: url(img/threeufos.png);
+	background-image: url(img/invaders/invader-1.png);
 	background-position: right bottom;
 	filter: saturate(60%);
 	background-size: 45vw;
