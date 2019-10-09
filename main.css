@@ -89,10 +89,11 @@ p {
 
 
 .layer-1 {
-	background-image: url(img/mist.png);
-	background-position:left bottom ;
+	background-image: url(img/invaders/HighresScreenshot00012.png);
+
+	background-position:left bottom;
 	opacity: 1;
-	background-size: 40vw;
+	background-size: 50vw;
 }
 
 .layer-2 {
