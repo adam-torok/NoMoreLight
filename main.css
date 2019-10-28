@@ -327,7 +327,7 @@ header nav ul {
 
 li a {
 	text-transform: uppercase;
-	padding-right: 1rem;
+	margin: 25px;
 	text-align: center;
 }
 
@@ -779,4 +779,21 @@ nav.fill ul li a:hover:after {
   
   p{
 	font-family: 'Oswald', sans-serif;
+  }
+
+  .glow {
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 10px #ffb84d, 0 0 40px #e60073, 0 0 20px #ffb84d, 0 0 60px #ffb84d, 0 0 70px #ffb84d;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ffb84d, 0 0 10px white, 0 0 50px #ff4da6, 0 0 20px #966317, 0 0 70px #ff4da6, 0 0 80px #ffb84d;
+	}
   }
