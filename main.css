@@ -50,7 +50,7 @@ html {
 #hero-mobile {
 	display: none;
 	background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0), rgba(19, 13, 10)), url(img/bg-image-2.jpg)
-   no-repeat center bottom / cover;
+   	no-repeat center bottom / cover;
   
 }
 
@@ -89,7 +89,7 @@ p {
 
 
 .layer-1 {
-	background-image: url(img/invaders/HighresScreenshot00012.png);
+	/* background-image: url(img/invaders/HighresScreenshot00012.png); */
 
 	background-position:left bottom;
 	opacity: 1;
