@@ -59,7 +59,7 @@ p {
 }
 
 .layer-bg {
-	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.8), rgba(19, 13, 10)),  url(../IMG/bg-image-4.jpg);
+	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.8), rgba(19, 13, 10)),  url(../IMG/landing.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -213,7 +213,7 @@ nav ul{
 }
 .introduce{
 	display: flex;
-	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.5), rgba(19, 13, 10)),  url(../IMG/bg-image-2.jpg);
+	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.5), rgba(19, 13, 10)),  url(../IMG/intro.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -279,7 +279,7 @@ nav ul{
 	grid-area: news;
 	display: grid;
 	padding: 1rem;
-	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.5), rgba(19, 13, 10)),  url(../IMG/bg-image-2.jpg);
+	background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.5), rgba(19, 13, 10)),  url(../IMG/intro.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -477,17 +477,17 @@ hr{
 
 .blink{
 	transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  -webkit-animation: blinking 3s ease infinite;  /* Safari 4+ */
-  -moz-animation: blinking 3s ease infinite;  /* Fx 5+ */
-  -o-animation: blinking 3s ease infinite;  /* Opera 12+ */
-  animation: blinking 3s ease infinite;  /* IE 10+, Fx 29+ */
+  -webkit-animation: blinking 10s ease infinite;  /* Safari 4+ */
+  -moz-animation: blinking 10s ease infinite;  /* Fx 5+ */
+  -o-animation: blinking 10s ease infinite;  /* Opera 12+ */
+  animation: blinking 10s ease infinite;  /* IE 10+, Fx 29+ */
 }
 .blink-reverse{
 	transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-	-webkit-animation: blinking-reverse 3s ease infinite;  /* Safari 4+ */
-	-moz-animation: blinking-reverse 3s ease infinite;  /* Fx 5+ */
-	-o-animation: blinking-reverse 3s ease infinite;  /* Opera 12+ */
-	animation: blinking-reverse 3s ease infinite;  /* IE 10+, Fx 29+ */
+	-webkit-animation: blinking-reverse 10s ease infinite;  /* Safari 4+ */
+	-moz-animation: blinking-reverse 10s ease infinite;  /* Fx 5+ */
+	-o-animation: blinking-reverse 10s ease infinite;  /* Opera 12+ */
+	animation: blinking-reverse 10s ease infinite;  /* IE 10+, Fx 29+ */
 }
 @-webkit-keyframes blinking-reverse{
   0% {
