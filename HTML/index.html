@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/main.css">
-  <script src="../JS/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../CSS/main.css">
+  <script src="../js/main.js" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
   <script src="https://kit.fontawesome.com/75ad4010ea.js" crossorigin="anonymous"></script>
@@ -13,26 +13,19 @@
 </head>
 <body>
 <header>
-  <nav>
+  <nav class="head">
     <ul>
       <li><img class="logo" src="../img/logo_skull_white.png" alt=""></li>
       <li><a href="#">Home</a></li>
-      <li><a href="#news">VLOG</a></li>
-      <li><a style="color:firebrick!important;" href="">Patreon</a></li>
+      <li><a href="#news">VIDEOS</a></li>
+      <li><a style="color:firebrick!important;" href="https://paypal.me/pools/c/8lCIah2vO8">Patreon</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
-<div id='hero'>
-<div class='layer-bg layer' data-depth='0.10' data-type='parallax'>
-  <img class="blink-reverse" src="../img/logo_white.png" alt="">
-</div>
-<div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
-<div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-<div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
-<div class='blink layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
-<div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+<div class='landing'>
+  <img width="35%" src="../img/logo_white.png" alt="">
 </div>
 <div class="container">
   <div class="slogan">
@@ -107,7 +100,7 @@
   <div class="gameplay">
     <h1>ABOUT THE GAME</h1>
     <div class="gameplay-grid">
-      <div>
+      <div class="gameplay-section">
         <img class="gameplay-img" src="../img/atmosphere.png" alt="">
         <h2>ATMOSPHERE</h2>
         <hr>
@@ -116,7 +109,7 @@
           but you cannot avoid them all. Because of the constant pressure and fight for survival No More Light has a depressing, postapocalyptic
           atmosphere like no other. </p>
       </div>
-      <div>
+      <div class="gameplay-section">
         <img class="gameplay-img" src="../img/envi.png" alt="">
         <h2>ENVIRONMENT</h2>
         <hr>
@@ -125,7 +118,7 @@
           But be careful! In this fast-changing dark world there's only one thing that's for granted: You are in danger!
           The only question is: Are you prepared? </p>
       </div>
-      <div>
+      <div class="gameplay-section">
         <img class="gameplay-img" src="../img/gameplay.png" alt="">
         <h2>GAMEPLAY</h2>
         <hr>
@@ -136,8 +129,12 @@
       </div>
     </div>
   </div>
-<div id="news" class="slogan">
-  <h1>DEV VLOG</h1>
+  <div id="news">
+    <br>
+    <br>
+  </div>
+<div class="slogan">
+  <h1>DEV VIDEOS</h1>
 </div>
   <div class="news">
         <article class="news-article">
@@ -230,35 +227,39 @@
           </div>
         </article>
     </div>
-        <div class="slogan">
+    <div id="gallery">
+      <br>
+      <br>
+    </div>
+        <div  class="slogan">
           <h1>GALLERY</h1>
         </div>
-      <div id="gallery" class="gallery">
-        <a href="../img/4.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+      <div  class="gallery">
+        <a href="../img/4.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/4.jpg" />
         </a>
-        <a href="../img/6.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/6.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/6.jpg" />
         </a>
-        <a href="../img/11.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/11.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/11.jpg" />
         </a>
-        <a href="../img/10.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/10.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/10.jpg" />
         </a>
-        <a href="../img/8.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
-          <img src="../img/8.jpg" />
+        <a href="../img/18.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
+          <img src="../img/18.jpg" />
         </a>
-        <a href="../img/5.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/5.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/5.jpg" />
         </a>
-        <a href="../img/12.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/12.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/12.jpg" />
         </a>
-        <a href="../img/17.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/17.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/17.jpg" />
         </a>
-        <a href="../img/14.jpg" class="js-smartPhoto" data-caption="placeholder" data-id="placeholder" data-group="image"/>
+        <a href="../img/14.jpg" class="js-smartPhoto" data-id="placeholder" data-group="image"/>
           <img src="../img/14.jpg" />
         </a>
       </div>
@@ -278,7 +279,7 @@
         <h2></h2>
         <div class="social-container">
           <a href=""><i style="color: white" class="fab fa-facebook  fa-2x" aria-hidden="true"></i></a>
-          <a href=""><i style="color: white" class="fab fa-patreon   fa-2x" aria-hidden="true"></i></a>
+          <a href="https://paypal.me/pools/c/8lCIah2vO8"><i style="color: white" class="fab fa-patreon   fa-2x" aria-hidden="true"></i></a>
           <a href=""><i style="color: white" class="fab fa-facebook  fa-2x" aria-hidden="true"></i></a>
         </div>
         <blockquote>
@@ -291,16 +292,16 @@
         </blockquote>
       </div>
       <div class="socials">
+      	<a href="" target="_new"><i style="color: white" class="fab fa-patreon  fa-1x" aria-hidden="true"></i></a>
       	<a href="" target="_new"><i style="color: white" class="fab fa-facebook  fa-1x" aria-hidden="true"></i></a>
-      	<a href="" target="_new"><i style="color: white" class="fab fa-facebook  fa-1x" aria-hidden="true"></i></a>
-      	<a href="" target="_new"><i style="color: white" class="fab fa-facebook  fa-1x" aria-hidden="true"></i></a>
-      	<a href="" target="_new"><i style="color: white" class="fab fa-facebook  fa-1x" aria-hidden="true"></i></a>
+      	<a href="" target="_new"><i style="color: white" class="fab fa-twitter  fa-1x" aria-hidden="true"></i></a>
+      	<a href="" target="_new"><i style="color: white" class="fab fa-youtube  fa-1x" aria-hidden="true"></i></a>
       </div>
     </div>
 </div>
 </body>
-<script src="../JS/jquery.js" charset="utf-8"></script>
-<script src="../JS/main.js" charset="utf-8"></script>
+<script src="../js/jquery.js" charset="utf-8"></script>
+<script src="../js/main.js" charset="utf-8"></script>
 <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -319,5 +320,10 @@ $(function(){
      }
    });
  }
+ $(document).ready(function(){
+  $('.logo').click(function(){
+    $('.head ul li').nextAll().toggle();
+  })
+ })
 </script>
 </html>

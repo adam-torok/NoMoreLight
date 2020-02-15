@@ -15,6 +15,7 @@ window.addEventListener('scroll', function(event) {
     }
 
   });
+  
   window.addEventListener('DOMContentLoaded',function(){
       new SmartPhoto(".js-smartPhoto");
   });
