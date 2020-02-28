@@ -19,7 +19,7 @@ align-items: center;
 
 .landing{
   height: 100vh;
-  background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.2), rgba(19, 13, 10)),  url(../img/background1.png);
+  background: linear-gradient( rgb(19, 13, 10), rgba(0, 0, 0, 0.2), rgba(19, 13, 10)),  url(../img/Alien_Background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
